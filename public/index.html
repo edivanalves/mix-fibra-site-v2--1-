@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth antialiased bg-blue-950 text-white"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes">
+    <title>Mix Fibra • Internet de Ultra Velocidade para sua Casa ou Empresa</title>
+    <meta name="description" content="Mix Fibra: Internet 100% fibra óptica, ultra velocidade, planos com TV, suporte humano e cobertura em Sumé, Congo, Camalaú e Caraúbas. Conecte-se ao futuro!">
+    <meta name="keywords" content="Mix Fibra, internet fibra óptica, ultra velocidade, planos de internet, TV digital, Sumé, Congo, Camalaú, Caraúbas, provedor de internet, suporte técnico">
+    <meta name="author" content="Mix Fibra">
+    <link rel="icon" href="imagens/logo-mix-fibra.png" type="image/png">
+    <link rel="apple-touch-icon" href="imagens/logo-mix-fibra.png">
+    <meta property="og:title" content="Mix Fibra • Internet de Ultra Velocidade para sua Casa ou Empresa">
+    <meta property="og:description" content="Internet 100% fibra óptica, planos com TV, suporte humano e cobertura regional. Venha para a Mix Fibra!">
+    <meta property="og:image" content="imagens/logo-mix-fibra.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mixfibra.com.br/">
+    <meta name="theme-color" content="#0a0a2a">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Import modern, clean font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        html, body {
+            font-family: 'Inter', system-ui, sans-serif;
+            letter-spacing: 0.01em;
+        }
+
+        /* Nebula animated background */
+        .nebula-bg {
+            background: radial-gradient(circle at 20% 80%, rgba(0, 128, 255, 0.25) 0%, transparent 60%),
+                        radial-gradient(circle at 80% 20%, rgba(128, 0, 255, 0.18) 0%, transparent 60%),
+                        linear-gradient(135deg, #0a0a2a 0%, #000033 100%);
+            background-size: 200% 200%;
+            animation: moveBackground 18s ease-in-out infinite alternate;
+        }
+        /* Nebula animated background movement - suave, multidirecional e com efeito de "respiração" */
+        @keyframes moveBackground {
+            0% {
+            background-position: 10% 90%, 90% 10%, 50% 50%;
+            background-size: 200% 200%;
+            }
+            20% {
+            background-position: 30% 70%, 70% 30%, 55% 45%;
+            background-size: 210% 210%;
+            }
+            40% {
+            background-position: 50% 50%, 50% 50%, 60% 40%;
+            background-size: 220% 220%;
+            }
+            60% {
+            background-position: 70% 30%, 30% 70%, 45% 55%;
+            background-size: 210% 210%;
+            }
+            80% {
+            background-position: 90% 10%, 10% 90%, 50% 50%;
+            background-size: 200% 200%;
+            }
+            100% {
+            background-position: 10% 90%, 90% 10%, 50% 50%;
+            background-size: 200% 200%;
+            }
+        }
+
+        /* Hero section with glassmorphism overlay */
+        .hero-bg {
+            background-image:
+            /* Hero background: animated gradient overlay + blurred abstract SVG + fallback image */
+            linear-gradient(120deg, rgba(10,20,60,0.96) 0%, rgba(0,0,40,0.90) 100%),
+            url('data:image/svg+xml;utf8,<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="g1" cx="60%" cy="30%" r="80%"><stop offset="0%" stop-color="%23ff9800" stop-opacity="0.18"/><stop offset="100%" stop-color="%230a0a2a" stop-opacity="0"/></radialGradient><radialGradient id="g2" cx="30%" cy="80%" r="60%"><stop offset="0%" stop-color="%2330cfff" stop-opacity="0.13"/><stop offset="100%" stop-color="%230a0a2a" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="800" fill="url(%23g1)"/><rect width="1200" height="800" fill="url(%23g2)"/><ellipse cx="900" cy="200" rx="180" ry="80" fill="%23ffb300" fill-opacity="0.08"/><ellipse cx="300" cy="700" rx="220" ry="90" fill="%2330cfff" fill-opacity="0.07"/><ellipse cx="600" cy="400" rx="320" ry="180" fill="%23fff" fill-opacity="0.03"/></svg>'),
+            url('imagens/ChatGPT%20Image%2019%20de%20abr.%20de%202025,%2014_12_38.png');
+            background-size: cover, cover, cover;
+            background-position: center top, center, center;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            position: relative;
+            min-height: 100vh;
+            box-shadow: 0 12px 48px 0 rgba(0,0,0,0.32), 0 2px 12px 0 rgba(255,165,0,0.12);
+            border-radius: 0 0 3rem 3rem;
+            overflow: hidden;
+            z-index: 0;
+            animation: hero-bg-fadein 1.2s cubic-bezier(.4,0,.2,1);
+        }
+        @keyframes hero-bg-fadein {
+            from { opacity: 0; transform: scale(1.04);}
+            to   { opacity: 1; transform: scale(1);}
+        }
+        /* Modern glass effect for hero content */
+        .hero-content-glass {
+            background: rgba(16,26,58,0.93);
+            backdrop-filter: blur(10px) saturate(1.25);
+            border-radius: 2rem;
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.20), 0 2px 8px 0 rgba(255,165,0,0.12);
+            border: 1.5px solid #23305a55;
+        }
+        /* Animated gradient border for hero overlay */
+        .hero-overlay {
+            background: rgba(10, 20, 60, 0.68);
+            backdrop-filter: blur(2.5px);
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            border-radius: 0 0 2rem 2rem;
+            border-bottom: 3px solid transparent;
+            animation: hero-border-glow 2.5s infinite alternate;
+        }
+        @keyframes hero-border-glow {
+            0% { border-bottom-color: #ff9800; }
+            100% { border-bottom-color: #30cfff; }
+        }
+        /* Hero badge (selo) */
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(90deg, #ff9800 0%, #30cfff 100%);
+            color: #fff;
+            font-weight: 900;
+            font-size: 1.1rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 999px;
+            box-shadow: 0 2px 16px 0 rgba(255,152,0,0.18);
+            letter-spacing: 0.03em;
+            margin-bottom: 1.5rem;
+            animation: badge-pop 1.2s cubic-bezier(.4,0,.2,1);
+        }
+        @keyframes badge-pop {
+            0% { transform: scale(0.8) translateY(-20px); opacity: 0; }
+            60% { transform: scale(1.08) translateY(4px); opacity: 1; }
+            100% { transform: scale(1) translateY(0); opacity: 1; }
+        }
+        /* Typing animation for hero headline */
+        .typing-effect {
+            display: inline-block;
+            border-right: 3px solid #ff9800;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2.2s steps(40, end), blink-caret 0.7s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            0%, 100% { border-color: #ff9800; }
+            50% { border-color: transparent; }
+        }
+        /* Fade-in for hero subtitle */
+        .fadein-text {
+            opacity: 0;
+            animation: fadein-text 1.2s 1.2s forwards;
+        }
+        @keyframes fadein-text {
+            to { opacity: 1; }
+        }
+        /* Secondary CTA button */
+        .btn-secondary-hero {
+            background: linear-gradient(90deg, #30cfff 0%, #ff9800 100%);
+            color: #fff;
+            border: none;
+            border-radius: 999px;
+            padding: 13px 32px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin-left: 1rem;
+            box-shadow: 0 2px 12px rgba(48,207,255,0.10);
+            transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+            outline: none;
+        }
+        .btn-secondary-hero:hover, .btn-secondary-hero:focus {
+            background: linear-gradient(90deg, #ff9800 0%, #30cfff 100%);
+            box-shadow: 0 4px 24px rgba(48,207,255,0.18);
+            transform: scale(1.04);
+        }
+        /* Navbar glass effect and shadow */
+        .nav-link, .nav-link-mobile {
+            font-weight: 700;
+            color: #fff;
+            padding: 0.5rem 1.2rem;
+            border-radius: 999px;
+            transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+            position: relative;
+        }
+        .nav-link:hover, .nav-link-mobile:hover {
+            background: linear-gradient(90deg, #ff9800 0%, #30cfff 100%);
+            color: #0a0a2a;
+            box-shadow: 0 2px 12px rgba(255,152,0,0.18);
+        }
+        .nav-link-mobile {
+            font-size: 1.1rem;
+            margin: 0 0.2rem;
+        }
+        /* Subtle shadow for main sections */
+        section {
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.13), 0 2px 8px 0 rgba(255,165,0,0.05);
+        }
+        /* Section background gradient accent with animated shimmer */
+        section {
+            background-image: linear-gradient(120deg, rgba(10,20,60,0.98) 60%, rgba(0,0,40,0.92) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        section::before {
+            content: '';
+            position: absolute;
+            top: -40px; left: -40px; right: -40px; bottom: -40px;
+            background: linear-gradient(120deg, rgba(255,184,0,0.07) 0%, rgba(48,207,255,0.06) 100%);
+            filter: blur(32px);
+            z-index: 0;
+            pointer-events: none;
+            animation: section-shimmer 7s ease-in-out infinite alternate;
+        }
+        @keyframes section-shimmer {
+            0% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        /* Footer accent line */
+        footer {
+            border-top: 3px solid #ff9800;
+        }
+        .hero-overlay {
+            background: rgba(10, 20, 60, 0.65);
+            backdrop-filter: blur(2px);
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            border-radius: 0 0 2rem 2rem;
+        }
+
+        /* Glowing highlight for plan cards */
+        .glowing-circle {
+            box-shadow: 0 0 24px 8px rgba(255, 165, 0, 0.7), 0 0 60px 12px rgba(255, 165, 0, 0.25);
+            animation: pulse 1.8s infinite alternate;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 24px 8px rgba(255, 165, 0, 0.7), 0 0 60px 12px rgba(255, 165, 0, 0.25);
+            }
+            100% {
+                transform: scale(1.06);
+                box-shadow: 0 0 36px 16px rgba(255, 165, 0, 1), 0 0 80px 24px rgba(255, 165, 0, 0.35);
+            }
+        }
+
+        /* Modern spinner */
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.15);
+            border-top: 4px solid #FFA500;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            animation: spin 0.9s linear infinite;
+            box-shadow: 0 0 16px 2px #FFA50044;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+
+        /* FAQ accordion - modern, clean */
+        .faq-item {
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            background: transparent;
+        }
+        .faq-question {
+            cursor: pointer;
+            padding: 1.1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: #fff;
+            font-size: 1.15rem;
+            transition: color 0.25s;
+            user-select: none;
+        }
+        .faq-question:hover {
+            color: #FFA500;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(.4,0,.2,1), padding 0.5s cubic-bezier(.4,0,.2,1);
+            color: #cbd5e1;
+            padding: 0 0;
+            font-size: 1.05rem;
+        }
+        .faq-answer.open {
+            max-height: 300px;
+            padding: 0.7rem 0 1.1rem 0;
+        }
+        .faq-arrow {
+            transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+        }
+        .faq-arrow.rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Responsive video cards */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 1.2rem;
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18), 0 1.5px 6px 0 rgba(255,165,0,0.08);
+            background: #101a3a;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border-radius: 1.2rem;
+        }
+
+        /* Card hover effect - subtle lift, glow, and tilt */
+        .card {
+            transition: box-shadow 0.22s, transform 0.22s;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            will-change: transform;
+        }
+        .card:hover {
+            box-shadow: 0 8px 32px 0 rgba(255,165,0,0.13), 0 2px 16px rgba(0,0,0,0.16);
+            transform: translateY(-4px) scale(1.025) rotateY(var(--tilt, 6deg));
+        }
+        /* Tilt effect for plan cards */
+        .plan-tilt {
+            perspective: 800px;
+        }
+        /* Badge styles for "Mais vendido" and "Recomendado" */
+        .plan-badge {
+            position: absolute;
+            top: 1.2rem;
+            left: 1.2rem;
+            z-index: 20;
+            padding: 0.4rem 1.2rem;
+            border-radius: 999px;
+            font-weight: 900;
+            font-size: 1rem;
+            letter-spacing: 0.03em;
+            box-shadow: 0 2px 16px 0 rgba(255,152,0,0.18);
+            background: linear-gradient(90deg, #ff9800 0%, #ffb300 100%);
+            color: #fff;
+            animation: badge-pop 1.2s cubic-bezier(.4,0,.2,1);
+            user-select: none;
+            pointer-events: none;
+        }
+        .plan-badge.recommended {
+            background: linear-gradient(90deg, #30cfff 0%, #ff9800 100%);
+            color: #fff;
+        }
+
+        /* Modern button style */
+        .btn {
+            background: linear-gradient(90deg, #ff9800 0%, #ffb300 100%);
+            color: #fff;
+            border: none;
+            border-radius: 999px;
+            padding: 13px 32px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 12px rgba(255,152,0,0.10);
+            transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+            outline: none;
+        }
+        .btn:hover, .btn:focus {
+            background: linear-gradient(90deg, #ffb300 0%, #ff9800 100%);
+            box-shadow: 0 4px 24px rgba(255,152,0,0.18);
+            transform: scale(1.04);
+        }
+
+        /* Custom scrollbar for modern look */
+        ::-webkit-scrollbar {
+            width: 8px;
+            background: #0a0a2a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #1e293b 0%, #ff9800 100%);
+            border-radius: 8px;
+        }
+
+        /* Inputs and textarea modern style */
+        textarea, input[type="text"], input[type="email"] {
+            background: rgba(16,26,58,0.92);
+            border: 1.5px solid #23305a;
+            border-radius: 0.8rem;
+            color: #fff;
+            font-size: 1.07rem;
+            transition: border 0.18s, box-shadow 0.18s;
+        }
+        textarea:focus, input[type="text"]:focus, input[type="email"]:focus {
+            border: 1.5px solid #ff9800;
+            box-shadow: 0 0 0 2px #ff980055;
+            outline: none;
+        }
+
+        /* Subtle glass effect for cards/sections */
+        .glass {
+            background: rgba(16,26,58,0.82);
+            backdrop-filter: blur(4px);
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+        }
+
+        /* Section titles with accent underline */
+        h2, h3 {
+            position: relative;
+            display: inline-block;
+        }
+        h2::after, h3::after {
+            content: '';
+            display: block;
+            margin: 0.5rem auto 0 auto;
+            width: 60%;
+            height: 3px;
+            border-radius: 2px;
+            background: linear-gradient(90deg, #ff9800 0%, #ffb300 100%);
+            opacity: 0.7;
+        }
+
+        /* Animate bounce for CTA */
+        .animate-bounce {
+            animation: bounce 1.2s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0);}
+            100% { transform: translateY(-8px);}
+        }
+
+        /* --- Navbar customizations --- */
+        .custom-navbar {
+            min-height: 70px;
+            height: 4.5rem;
+            box-shadow: 0 2px 16px 0 rgba(10,20,60,0.10), 0 1.5px 8px 0 rgba(255,152,0,0.06);
+            background: rgba(10, 20, 60, 0.82);
+            backdrop-filter: blur(12px);
+        }
+        .custom-navbar .nav-link, .custom-navbar .nav-link-mobile {
+            font-size: 1.08rem;
+        }
+        .hamburger {
+            width: 38px;
+            height: 38px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 60;
+            border-radius: 999px;
+            transition: background 0.18s;
+        }
+        .hamburger:hover {
+            background: rgba(255,152,0,0.08);
+        }
+        .hamburger-bar {
+            width: 24px;
+            height: 3px;
+            background: #fff;
+            margin: 3px 0;
+            border-radius: 2px;
+            transition: all 0.32s cubic-bezier(.4,0,.2,1);
+        }
+        .hamburger.active .bar1 {
+            transform: rotate(45deg) translate(5px, 5px);
+            background: #ff9800;
+        }
+        .hamburger.active .bar2 {
+            opacity: 0;
+        }
+        .hamburger.active .bar3 {
+            transform: rotate(-45deg) translate(5px, -5px);
+            background: #ff9800;
+        }
+        .mobile-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(10, 20, 60, 0.98);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18), 0 1.5px 6px 0 rgba(255,165,0,0.08);
+            border-radius: 0 0 1.5rem 1.5rem;
+            z-index: 49;
+            overflow: hidden;
+            animation: mobileMenuFadeIn 0.35s cubic-bezier(.4,0,.2,1);
+        }
+        @keyframes mobileMenuFadeIn {
+            from { opacity: 0; transform: translateY(-16px);}
+            to   { opacity: 1; transform: translateY(0);}
+        }
+        .mobile-menu .nav-link-mobile {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 1rem 2rem;
+            font-size: 1.15rem;
+            border-radius: 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            background: transparent;
+            transition: background 0.18s, color 0.18s;
+        }
+        .mobile-menu .nav-link-mobile:hover,
+        .mobile-menu .nav-link-mobile:focus {
+            background: linear-gradient(90deg, #ff9800 0%, #30cfff 100%);
+            color: #0a0a2a;
+        }
+        .mobile-menu .nav-link-mobile:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<!-- ...existing code... -->
+<body class="bg-blue-950 text-white flex flex-col items-center min-h-screen min-w-screen w-full h-full overflow-x-hidden nebula-bg">
+    <div id="root" class="w-full h-full min-h-screen min-w-screen"></div>
+    <div id="root"></div>
+<!-- ...existing code... -->
+<div class="nebula-bg fixed inset-0 w-full h-full -z-10"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        // Componente principal da aplicação
+        function App() {
+            // Estado para o indicador de carregamento inicial
+            const [loading, setLoading] = React.useState(true);
+
+            // Referências para scroll suave da navegação
+            const homeRef = React.useRef(null);
+            const plansRef = React.useRef(null);
+            const videoRef = React.useRef(null);
+            const supportRef = React.useRef(null);
+            const aboutRef = React.useRef(null);
+            const contactRef = React.useRef(null);
+
+            // Efeito para simular o carregamento inicial do conteúdo
+            React.useEffect(() => {
+                setTimeout(() => {
+                    setLoading(false);
+                }, 2000); // Simula 2 segundos de carregamento
+            }, []);
+
+            // Função para scroll suave
+            const scrollToSection = (ref) => {
+                ref.current.scrollIntoView({ behavior: 'smooth' });
+            };
+
+            return (
+                <div className="bg-blue-950 text-white flex flex-col items-center min-h-screen overflow-x-hidden nebula-bg">
+                    {/* Barra de Navegação Moderna */}
+                    <nav className="w-full bg-blue-800/80 backdrop-blur-md shadow-xl fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+                        <div className="max-w-6xl mx-auto flex justify-between items-center py-2 px-2 md:px-0">
+                            <a href="#home" onClick={() => scrollToSection(homeRef)} className="flex items-center space-x-2 group">
+                                <img src="imagens/logo-mix-fibra.png" alt="Logo Mix Fibra" className="w-10 h-10 rounded-lg shadow-md group-hover:scale-110 transition-transform duration-200" />
+                                <span className="text-2xl md:text-3xl font-black tracking-tight text-white group-hover:text-orange-400 transition-colors duration-200">
+                                    MIX <span className="text-orange-400">FIBRA</span>
+                                </span>
+                            </a>
+                            <div className="hidden md:flex space-x-2 md:space-x-6">
+                                <a href="#home" onClick={() => scrollToSection(homeRef)} className="nav-link">Início</a>
+                                <a href="#plans-section" onClick={() => scrollToSection(plansRef)} className="nav-link">Planos</a>
+                                <a href="#video-section" onClick={() => scrollToSection(videoRef)} className="nav-link">Vídeos</a>
+                                <a href="#support-section" onClick={() => scrollToSection(supportRef)} className="nav-link">Suporte</a>
+                                <a href="#about" onClick={() => scrollToSection(aboutRef)} className="nav-link">Sobre Nós</a>
+                                <a href="#contact" onClick={() => scrollToSection(contactRef)} className="nav-link">Contato</a>
+                            </div>
+                            {/* Botão de WhatsApp fixo para mobile */}
+                            <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="ml-2 md:ml-0 flex items-center bg-green-500 hover:bg-green-600 text-white font-bold px-3 py-2 rounded-full shadow-lg transition-all duration-200 text-sm md:text-base">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" /></svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                        {/* Navegação mobile */}
+                        <div className="md:hidden flex justify-center mt-2 space-x-2">
+                            <a href="#home" onClick={() => scrollToSection(homeRef)} className="nav-link-mobile">Início</a>
+                            <a href="#plans-section" onClick={() => scrollToSection(plansRef)} className="nav-link-mobile">Planos</a>
+                            <a href="#video-section" onClick={() => scrollToSection(videoRef)} className="nav-link-mobile">Vídeos</a>
+                            <a href="#support-section" onClick={() => scrollToSection(supportRef)} className="nav-link-mobile">Suporte</a>
+                        </div>
+                    </nav>
+
+                    {/* Seção Hero Moderna */}
+                    <section
+                        id="home"
+                        ref={homeRef}
+                        className="hero-bg w-full min-h-screen flex items-center justify-center text-center relative pt-28 pb-12"
+                    >
+                        <div className="hero-overlay absolute inset-0 rounded-b-3xl"></div>
+                        {loading && (
+                            <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900/95 z-20 backdrop-blur-md rounded-b-3xl">
+                                <div className="relative mb-8">
+                                    <div className="absolute -inset-3 blur-2xl opacity-60 bg-gradient-to-tr from-orange-400 via-yellow-300 to-cyan-400 rounded-full animate-pulse"></div>
+                                    <img
+                                        src="imagens/logo-mix-fibra.png"
+                                        alt="Logo Mix Fibra carregando"
+                                        className="w-28 md:w-40 rounded-xl shadow-xl border-4 border-white/10 mx-auto animate-bounce"
+                                        style={{ animationDuration: '1.2s' }}
+                                    />
+                                </div>
+                                <div className="spinner mb-6 scale-125"></div>
+                                <p className="text-2xl md:text-3xl font-black text-orange-300 animate-pulse drop-shadow-lg mb-2">
+                                    Mix Fibra está chegando...
+                                </p>
+                                <p className="text-blue-200 text-base md:text-lg font-medium animate-fade-in">
+                                    Preparando ultra velocidade para você <span className="animate-bounce">🚀</span>
+                                </p>
+                            </div>
+                        )}
+                        <div
+                            className={`relative z-10 p-6 md:p-12 max-w-3xl mx-auto flex flex-col items-center transition-opacity duration-500 ${
+                                loading ? 'opacity-0' : 'opacity-100'
+                            }`}
+                        >
+                            {/* Logo com efeito de brilho */}
+                            <div className="relative mb-8">
+                                <div className="absolute -inset-2 blur-2xl opacity-60 bg-gradient-to-tr from-orange-400 via-yellow-300 to-cyan-400 rounded-xl animate-pulse"></div>
+                                <img
+                                    src="imagens/logo-mix-fibra.png"
+                                    alt="Logo Mix Fibra - Internet de Ultra Velocidade"
+                                    className="mx-auto w-48 md:w-64 drop-shadow-xl rounded-2xl border-4 border-white/10"
+                                    loading="lazy"
+                                />
+                            </div>
+                            {/* Headline com gradiente e sombra */}
+                            <h1 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-orange-400 via-yellow-300 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_4px_24px_rgba(255,152,0,0.25)]">
+                                Internet de Ultra Velocidade<br />
+                                <span className="text-white drop-shadow-lg">para sua Casa ou Empresa</span>
+                            </h1>
+                            {/* Subheadline animada */}
+                            <p className="text-lg md:text-2xl text-blue-100 mb-8 font-medium animate-fade-in">
+                                Conecte-se ao futuro com estabilidade, suporte dedicado e planos sob medida.
+                            </p>
+                            {/* Botão CTA com efeito glow */}
+                            <a
+                                href="#plans-section"
+                                onClick={() => scrollToSection(plansRef)}
+                                className="relative inline-block bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 text-white font-extrabold py-4 px-12 rounded-full text-xl md:text-2xl shadow-xl transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400/60 animate-bounce"
+                                style={{ boxShadow: '0 0 32px 0 #ff980055, 0 4px 32px 0 #ffb30033' }}
+                            >
+                                <span className="relative z-10">Conheça Nossos Planos</span>
+                                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-400 via-yellow-300 to-orange-400 opacity-30 blur-lg pointer-events-none"></span>
+                            </a>
+                            {/* Selo de confiança/velocidade */}
+                            <div className="flex flex-wrap justify-center gap-4 mt-10">
+                                <div className="flex items-center bg-blue-800/80 rounded-full px-6 py-2 shadow-md text-orange-300 font-bold text-lg backdrop-blur-md">
+                                    <svg className="w-6 h-6 mr-2 text-orange-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                        <path d="M12 20v-6m0 0c-2.5 0-4.5-2-4.5-4.5S9.5 5 12 5s4.5 2 4.5 4.5S14.5 14 12 14z" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                    Ultra Velocidade
+                                </div>
+                                <div className="flex items-center bg-blue-800/80 rounded-full px-6 py-2 shadow-md text-cyan-300 font-bold text-lg backdrop-blur-md">
+                                    <svg className="w-6 h-6 mr-2 text-cyan-300" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2 0v10h12V5H4zm6 8a1 1 0 100-2 1 1 0 000 2z"/>
+                                    </svg>
+                                    TV com até 288 canais
+                                </div>
+                                <div className="flex items-center bg-blue-800/80 rounded-full px-6 py-2 shadow-md text-yellow-300 font-bold text-lg backdrop-blur-md">
+                                    <svg className="w-6 h-6 mr-2 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/>
+                                    </svg>
+                                    Suporte Ágil e Humano
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Seção de Planos e Recomendador */}
+                    <section id="plans-section" ref={plansRef} className={`w-full py-16 px-4 bg-blue-900 text-center shadow-inner mt-8 rounded-2xl max-w-6xl mx-auto transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-12">Nossos Planos de Internet</h2>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 px-4">
+{[
+    { megas: 50, price: '39,99', description: 'Ideal para uso básico e navegação.', highlight: false },
+    { megas: 100, price: '49,99', description: 'Para streaming e TV com 285 canais.', highlight: true, channels: 285 },
+    { megas: 200, price: '59,99', description: 'Perfeito para jogos e trabalho remoto +TV com 285 canais.', highlight: false, channels: 288 },
+    { megas: 300, price: '69,99', description: 'Experiência completa com 288 canais.', highlight: true, channels: 288 },
+    { megas: 500, price: '99,99', description: 'Ultra velocidade para empresas, gamers e grandes famílias. Inclui TV com 288 canais.', highlight: true, channels: 288 },
+].map((plan, index) => (
+    <div
+      key={index}
+      className={`relative bg-gradient-to-br from-blue-900/70 to-indigo-900/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border-2 ${
+        plan.highlight
+          ? 'border-orange-400/70 ring-4 ring-orange-300/30 scale-105 z-10'
+          : 'border-cyan-400/30'
+      } flex flex-col items-center hover:shadow-cyan-500/40 hover:scale-105 transform transition-all duration-400 group overflow-hidden`}
+      style={{ minHeight: 420 }}
+    >
+      {/* Glow/Blur background effect */}
+      <div className={`absolute -top-10 left-1/2 -translate-x-1/2 w-44 h-44 rounded-full blur-2xl opacity-40 pointer-events-none ${plan.highlight ? 'bg-orange-400' : 'bg-cyan-400'}`}></div>
+      {/* Icon */}
+      <div className={`mb-4 flex items-center justify-center w-20 h-20 rounded-full shadow-lg border-4 ${
+        plan.highlight
+          ? 'bg-gradient-to-tr from-orange-500 to-yellow-400 border-orange-300 animate-pulse'
+          : 'bg-gradient-to-tr from-cyan-500 to-blue-500 border-cyan-300'
+      }`}>
+        <svg className="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+          <path d="M12 20v-6m0 0c-2.5 0-4.5-2-4.5-4.5S9.5 5 12 5s4.5 2 4.5 4.5S14.5 14 12 14z" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </div>
+      {/* Megas */}
+      <div className={`text-5xl font-black mb-2 tracking-tight ${plan.highlight ? 'text-orange-400 drop-shadow-[0_2px_8px_rgba(255,165,0,0.6)]' : 'text-cyan-300 drop-shadow-[0_2px_8px_rgba(34,211,238,0.5)]'}`}>
+        {plan.megas}<span className="text-2xl font-bold align-top">MB</span>
+      </div>
+      <h3 className="text-xl font-bold text-white tracking-widest text-center mb-2 drop-shadow-md uppercase">
+        {plan.megas} Megas {plan.channels ? <span className="text-yellow-300 font-black">+ TV</span> : ''}
+      </h3>
+      <p className="text-cyan-100 text-base text-center mb-4 px-2">{plan.description}</p>
+      {plan.channels && (
+        <div className="flex items-center justify-center mb-4">
+          <svg className="w-6 h-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2 0v10h12V5H4zm6 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+          <span className="text-yellow-200 font-semibold">{plan.channels} canais</span>
+        </div>
+      )}
+      <p className="text-4xl font-extrabold text-orange-400 drop-shadow-md mb-6">R$ {plan.price}</p>
+      <button
+        className={`mt-auto px-8 py-3 font-bold rounded-full shadow-lg text-white text-lg tracking-wide transition-all duration-300 hover:scale-110 focus:outline-none ${
+          plan.highlight
+            ? 'bg-gradient-to-r from-orange-500 to-yellow-400 hover:from-orange-600 hover:to-yellow-500 ring-2 ring-white/30'
+            : 'bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700'
+        }`}
+      >
+        Assinar Agora
+      </button>
+      {/* Neon Glow Border */}
+      <div className={`absolute inset-0 rounded-3xl pointer-events-none border-4 ${plan.highlight ? 'border-orange-300/30' : 'border-cyan-300/10'} group-hover:border-white/30 transition-all duration-300`}></div>
+      {/* Decorative floating icon */}
+      {plan.highlight && (
+        <div className="absolute top-4 right-4 animate-bounce">
+          <svg className="w-8 h-8 text-orange-300 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.388-2.46a1 1 0 00-1.175 0l-3.388 2.46c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.388-2.46c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.967z"/></svg>
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
+
+                        {/* Recomendador de Planos (LLM) */}
+                        <PlanRecommender />
+                    </section>
+
+                    {/* Seção Por Que Escolher Mix Fibra */}
+                    <section className={`w-full py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-12 rounded-3xl max-w-6xl mx-auto transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-14 drop-shadow-lg">
+                            Por Que Escolher a <span className="text-orange-400">Mix Fibra?</span>
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                            {/* Card 1 */}
+                            <div className="relative bg-gradient-to-br from-blue-800/80 to-blue-900/80 glass rounded-2xl p-8 shadow-2xl flex flex-col items-center group hover:scale-105 transition-transform duration-300 overflow-hidden">
+                                {/* Glow effect */}
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-cyan-400 pointer-events-none"></div>
+                                <div className="mb-5 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-700 shadow-lg border-4 border-cyan-300 animate-pulse">
+                                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                        <path d="M12 20v-6m0 0c-2.5 0-4.5-2-4.5-4.5S9.5 5 12 5s4.5 2 4.5 4.5S14.5 14 12 14z" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3 className="text-2xl font-bold text-white mb-2 drop-shadow">Tecnologia de Ponta</h3>
+                                <p className="text-blue-200 text-center text-lg">Conexão <span className="text-cyan-300 font-bold">100% fibra óptica</span> para máxima estabilidade e velocidade.</p>
+                            </div>
+                            {/* Card 2 */}
+                            <div className="relative bg-gradient-to-br from-blue-800/80 to-blue-900/80 glass rounded-2xl p-8 shadow-2xl flex flex-col items-center group hover:scale-105 transition-transform duration-300 overflow-hidden">
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-orange-400 pointer-events-none"></div>
+                                <div className="mb-5 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-tr from-orange-400 via-yellow-300 to-orange-600 shadow-lg border-4 border-orange-300 animate-pulse">
+                                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                        <path d="M18 10c0-3.314-2.686-6-6-6S6 6.686 6 10c0 2.386 1.676 4.434 4 4.899V18h4v-3.101c2.324-.465 4-2.513 4-4.899z" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3 className="text-2xl font-bold text-white mb-2 drop-shadow">Suporte Dedicado</h3>
+                                <p className="text-blue-200 text-center text-lg">Equipe pronta para te ajudar <span className="text-orange-300 font-bold">sempre que precisar</span>, com agilidade.</p>
+                            </div>
+                            {/* Card 3 */}
+                            <div className="relative bg-gradient-to-br from-blue-800/80 to-blue-900/80 glass rounded-2xl p-8 shadow-2xl flex flex-col items-center group hover:scale-105 transition-transform duration-300 overflow-hidden">
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-yellow-300 pointer-events-none"></div>
+                                <div className="mb-5 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-tr from-yellow-300 via-orange-400 to-orange-600 shadow-lg border-4 border-yellow-200 animate-pulse">
+                                    <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2 0v10h12V5H4zm6 8a1 1 0 100-2 1 1 0 000 2z"/>
+                                    </svg>
+                                </div>
+                                <h3 className="text-2xl font-bold text-white mb-2 drop-shadow">Entretenimento Completo</h3>
+                                <p className="text-blue-200 text-center text-lg">Planos com <span className="text-yellow-300 font-bold">TV digital</span> para você e sua família desfrutarem de centenas de canais.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Seção de Imagens */}
+                    <section className={`w-full py-16 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-8 rounded-3xl max-w-6xl mx-auto transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-14 drop-shadow-lg">
+                            Nossa Conexão em <span className="text-orange-400">Imagens</span>
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            {/* Card 1 */}
+                            <div className="relative bg-gradient-to-br from-blue-800/80 to-blue-900/80 glass rounded-2xl p-6 shadow-2xl flex flex-col items-center group hover:scale-105 transition-transform duration-300 overflow-hidden">
+                                {/* Glow effect */}
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-orange-400 pointer-events-none"></div>
+                                <img src="https://placehold.co/600x400/000033/FFA500?text=Promoção+Mix+Fibra" alt="Promoção Mix Fibra" className="rounded-xl shadow-lg w-full h-56 object-cover mb-4 border-4 border-orange-400/30 group-hover:border-orange-400 transition-all duration-300" />
+                                <p className="text-blue-200 text-lg font-semibold">Promoção de planos com ultra velocidade.</p>
+                            </div>
+                            {/* Card 2 */}
+                            <div className="relative bg-gradient-to-br from-blue-800/80 to-blue-900/80 glass rounded-2xl p-6 shadow-2xl flex flex-col items-center group hover:scale-105 transition-transform duration-300 overflow-hidden">
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-cyan-400 pointer-events-none"></div>
+                                <img src="https://placehold.co/600x400/00ico+Mix+Fibra" alt="Técnico Mix Fibra" className="rounded-xl shadow-lg w-full h-56 object-cover mb-4 border-4 border-cyan-400/30 group-hover:border-cyan-400 transition-all duration-300" />
+                                <p className="text-blue-200 text-lg font-semibold">Nossos técnicos garantindo sua conexão.</p>
+                            </div>
+                            {/* Card 3 */}
+                            <div className="relative bg-gradient-to-br from-blue-800/80 to-blue-900/80 glass rounded-2xl p-6 shadow-2xl flex flex-col items-center group hover:scale-105 transition-transform duration-300 overflow-hidden md:col-span-2">
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-40 h-40 rounded-full blur-2xl opacity-30 bg-yellow-300 pointer-events-none"></div>
+                                <img src="https://placehold.co/1200x400/000033/FFFFFF?text=Instalação+Fibra+Óptica" alt="Instalação de Fibra" className="rounded-xl shadow-lg w-full h-56 object-cover mb-4 border-4 border-yellow-300/30 group-hover:border-yellow-300 transition-all duration-300" />
+                                <p className="text-blue-200 text-lg font-semibold">Cuidamos da sua instalação com fibra óptica.</p>
+                            </div>
+                            
+                        </div>
+                    </section>
+
+                    {/* Seção de Vídeos */}
+                    <section
+                        id="video-section"
+                        ref={videoRef}
+                        className={`w-full py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-12 rounded-3xl max-w-6xl mx-auto transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}
+                    >
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-14 drop-shadow-lg">
+                            Mix Fibra em <span className="text-orange-400">Ação</span>
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            {/* Vídeo 1 */}
+                            <div className="relative group video-container overflow-hidden shadow-xl border-4 border-orange-400/20 hover:border-orange-400 transition-all duration-300">
+                                <div className="absolute inset-0 bg-gradient-to-tr from-orange-400/10 via-yellow-300/5 to-cyan-400/10 opacity-0 group-hover:opacity-40 transition duration-300 pointer-events-none"></div>
+                                <iframe
+                                    src="https://www.youtube.com/embed/5qap5aO4i9A"
+                                    title="Mix Fibra Vídeo 1"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                                <div className="absolute bottom-3 left-3 bg-blue-900/80 px-4 py-2 rounded-full text-sm font-bold text-orange-300 shadow-lg backdrop-blur-md">
+                                    Promoção Ultra Velocidade
+                                </div>
+                            </div>
+                            {/* Vídeo 2 */}
+                            <div className="relative group video-container overflow-hidden shadow-xl border-4 border-cyan-400/20 hover:border-cyan-400 transition-all duration-300">
+                                <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400/10 via-blue-300/5 to-orange-400/10 opacity-0 group-hover:opacity-40 transition duration-300 pointer-events-none"></div>
+                                <iframe
+                                    src="https://www.youtube.com/embed/jfKfPfyJRdk"
+                                    title="Mix Fibra Vídeo 2"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                                <div className="absolute bottom-3 left-3 bg-blue-900/80 px-4 py-2 rounded-full text-sm font-bold text-cyan-300 shadow-lg backdrop-blur-md">
+                                    Atendimento Técnico
+                                </div>
+                            </div>
+                            {/* Vídeo 3 - Destaque */}
+                            <div className="relative group video-container md:col-span-2 overflow-hidden shadow-2xl border-4 border-yellow-300/20 hover:border-yellow-300 transition-all duration-300 mt-4">
+                                <div className="absolute inset-0 bg-gradient-to-tr from-yellow-300/10 via-orange-400/5 to-cyan-400/10 opacity-0 group-hover:opacity-40 transition duration-300 pointer-events-none"></div>
+                                <iframe
+                                    src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmFHd9sWcE9rO8QZ8"
+                                    title="Mix Fibra Playlist"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                                <div className="absolute bottom-3 left-3 bg-blue-900/80 px-4 py-2 rounded-full text-sm font-bold text-yellow-300 shadow-lg backdrop-blur-md">
+                                    Playlist Mix Fibra
+                                </div>
+                            </div>
+                        </div>
+                        <p className="text-blue-200 mt-10 text-xl font-semibold flex items-center justify-center gap-2">
+                            <svg className="w-7 h-7 text-orange-400 animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12H9v2h2V6zm0 4H9v4h2v-4z"/></svg>
+                            Assista e veja a diferença da <span className="text-orange-400 font-bold">ultra velocidade</span> Mix Fibra!
+                        </p>
+                    </section>
+
+                    {/* Seção de Depoimentos */}
+                    <section className={`w-full py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-12 rounded-3xl max-w-6xl mx-auto transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-14 drop-shadow-lg">
+                            O Que Nossos <span className="text-orange-400">Clientes</span> Dizem
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            {/* Depoimento 1 */}
+                            <div className="relative bg-gradient-to-br from-blue-800/80 to-blue-900/80 glass rounded-2xl p-8 shadow-2xl flex flex-col items-start group hover:scale-105 transition-transform duration-300 overflow-hidden">
+                                {/* Glow effect */}
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-orange-400 pointer-events-none"></div>
+                                <svg className="w-12 h-12 text-orange-400 mb-4 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M7.17 18c-.11 0-.22-.02-.33-.07a1 1 0 01-.54-1.31C7.8 14.14 9.5 12.5 12 12.5c2.5 0 4.2 1.64 5.7 4.12a1 1 0 01-1.75.98C14.7 15.36 13.5 14.5 12 14.5c-1.5 0-2.7.86-3.95 2.53a1 1 0 01-.88.47z"/>
+                                </svg>
+                                <p className="text-blue-100 italic mb-4 text-lg md:text-xl">"A Mix Fibra transformou minha experiência com a internet. Velocidade incrível e sem quedas! Recomendo a todos."</p>
+                                <div className="flex items-center mt-4">
+                                    <div>
+                                        <p className="font-bold text-orange-400 text-lg">Maria S.</p>
+                                        <p className="text-blue-300 text-sm">Sumé</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Depoimento 2 */}
+                            <div className="relative bg-gradient-to-br from-blue-800/80 to-blue-900/80 glass rounded-2xl p-8 shadow-2xl flex flex-col items-start group hover:scale-105 transition-transform duration-300 overflow-hidden">
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-cyan-400 pointer-events-none"></div>
+                                <svg className="w-12 h-12 text-cyan-400 mb-4 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M7.17 18c-.11 0-.22-.02-.33-.07a1 1 0 01-.54-1.31C7.8 14.14 9.5 12.5 12 12.5c2.5 0 4.2 1.64 5.7 4.12a1 1 0 01-1.75.98C14.7 15.36 13.5 14.5 12 14.5c-1.5 0-2.7.86-3.95 2.53a1 1 0 01-.88.47z"/>
+                                </svg>
+                                <p className="text-blue-100 italic mb-4 text-lg md:text-xl">"Excelente atendimento e uma internet que realmente entrega o que promete. Agora consigo trabalhar de casa sem preocupações."</p>
+                                <div className="flex items-center mt-4">
+                                    <div>
+                                        <p className="font-bold text-cyan-300 text-lg">João P.</p>
+                                        <p className="text-blue-300 text-sm">Congo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Indicador de navegação (decorativo) */}
+                        <div className="flex justify-center mt-10 space-x-3">
+                            <span className="w-4 h-4 rounded-full bg-orange-400 shadow-lg animate-pulse"></span>
+                            <span className="w-4 h-4 rounded-full bg-cyan-400 opacity-60"></span>
+                            <span className="w-4 h-4 rounded-full bg-yellow-300 opacity-40"></span>
+                        </div>
+                    </section>
+
+                    {/* Seção Sobre Nós / Área de Cobertura */}
+                    <section
+                        id="about"
+                        ref={aboutRef}
+                        className={`w-full py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-12 rounded-3xl max-w-6xl mx-auto transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}
+                    >
+                        <div className="relative mb-10 flex flex-col items-center">
+                            {/* Glow/Blur background effect */}
+                            <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-64 h-32 rounded-full blur-2xl opacity-40 bg-orange-400 pointer-events-none"></div>
+                            <img
+                                src="imagens/logo-mix-fibra.png"
+                                alt="Logo Mix Fibra"
+                                className="w-32 h-32 rounded-2xl shadow-xl border-4 border-orange-400/30 mb-4 bg-white/10 object-contain"
+                                loading="lazy"
+                            />
+                        </div>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-lg">
+                            Sobre a <span className="text-orange-400">Mix Fibra</span>
+                        </h2>
+                        <p className="text-blue-200 mb-4 text-xl md:text-2xl font-medium max-w-3xl mx-auto">
+                            A Mix Fibra é sua parceira em conectividade, trazendo <span className="text-orange-300 font-bold">internet de ultra velocidade</span> para sua casa ou empresa. Nossa missão é conectar pessoas e negócios, garantindo uma experiência online sem limites.
+                        </p>
+                        <p className="text-blue-200 mb-10 text-lg md:text-xl max-w-2xl mx-auto">
+                            Estamos em constante expansão para levar conexão de qualidade a mais lugares, sempre com o compromisso de <span className="text-cyan-300 font-bold">inovação</span> e <span className="text-orange-300 font-bold">excelência no atendimento</span>.
+                        </p>
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-10">
+                            <div className="flex flex-col items-center bg-blue-800/80 glass rounded-2xl p-8 shadow-xl w-full md:w-1/2">
+                                <h3 className="text-3xl md:text-4xl font-bold text-orange-400 mb-4 drop-shadow">
+                                    Cidades Atendidas
+                                </h3>
+                                <ul className="grid grid-cols-2 gap-4 text-left mx-auto max-w-xs text-blue-100 text-lg font-semibold">
+                                    <li className="flex items-center gap-2">
+                                        <span className="w-3 h-3 rounded-full bg-orange-400 animate-pulse"></span> Sumé
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <span className="w-3 h-3 rounded-full bg-cyan-400 animate-pulse"></span> Congo
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <span className="w-3 h-3 rounded-full bg-yellow-300 animate-pulse"></span> Camalaú
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <span className="w-3 h-3 rounded-full bg-orange-300 animate-pulse"></span> Caraúbas
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="flex flex-col items-center justify-center w-full md:w-1/2">
+                                <svg className="w-20 h-20 text-orange-400 mb-4 animate-bounce" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                    <path d="M12 20v-6m0 0c-2.5 0-4.5-2-4.5-4.5S9.5 5 12 5s4.5 2 4.5 4.5S14.5 14 12 14z" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                <p className="text-blue-200 text-lg md:text-xl font-semibold">
+                                    <span className="text-orange-400 font-bold">Verifique a disponibilidade</span> em seu endereço e venha para a Mix Fibra!
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-8">
+                            <div className="flex items-center gap-3 bg-gradient-to-r from-orange-400 via-yellow-300 to-cyan-400 px-6 py-3 rounded-full shadow-lg text-blue-900 font-extrabold text-lg animate-pulse">
+                                <svg className="w-6 h-6 text-blue-900" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2 0v10h12V5H4zm6 8a1 1 0 100-2 1 1 0 000 2z"/>
+                                </svg>
+                                Atendimento humano e ágil
+                            </div>
+                            <div className="flex items-center gap-3 bg-gradient-to-r from-cyan-400 via-blue-400 to-orange-400 px-6 py-3 rounded-full shadow-lg text-blue-900 font-extrabold text-lg animate-pulse">
+                                <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                    <path d="M12 20v-6m0 0c-2.5 0-4.5-2-4.5-4.5S9.5 5 12 5s4.5 2 4.5 4.5S14.5 14 12 14z" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                100% Fibra Óptica
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Seção de Contato */}
+                    <section
+                        id="contact"
+                        ref={contactRef}
+                        className={`w-full py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-12 rounded-3xl max-w-6xl mx-auto mb-12 transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}
+                    >
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-lg">
+                            Fale <span className="text-orange-400">Conosco</span>
+                        </h2>
+                        <p className="text-blue-200 mb-8 text-lg md:text-xl font-medium max-w-2xl mx-auto">
+                            Tem dúvidas, quer assinar um plano ou precisa de suporte? Nossa equipe está pronta para te atender!
+                        </p>
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-10">
+                            {/* Card WhatsApp/Telefone */}
+                            <div className="flex flex-col items-center bg-blue-800/80 glass rounded-2xl p-10 shadow-xl w-full md:w-1/2 group hover:scale-105 transition-transform duration-300 overflow-hidden relative">
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-green-400 pointer-events-none"></div>
+                                <a
+                                    href="https://wa.me/5589996411187"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-gradient-to-r from-green-500 via-green-400 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-extrabold py-4 px-10 rounded-full text-2xl md:text-3xl shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400 focus:ring-opacity-50 mb-4"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" />
+                                    </svg>
+                                    WhatsApp
+                                </a>
+                                <a
+                                    href="tel:+5589996411187"
+                                    className="mt-2 text-green-300 hover:text-green-400 font-bold text-xl md:text-2xl flex items-center transition-colors duration-200"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.103 6.103l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                    </svg>
+                                    (89) 99641-1187
+                                </a>
+                                <span className="mt-4 text-blue-200 text-lg">Atendimento via WhatsApp e ligação.</span>
+                            </div>
+                            {/* Card Horário e Localização */}
+                            <div className="flex flex-col items-center bg-blue-800/80 glass rounded-2xl p-10 shadow-xl w-full md:w-1/2 group hover:scale-105 transition-transform duration-300 overflow-hidden relative">
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-orange-400 pointer-events-none"></div>
+                                <div className="flex items-center gap-3 mb-4">
+                                    <svg className="w-8 h-8 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M6 2a1 1 0 00-1 1v1H5a3 3 0 00-3 3v8a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM5 7h10v8a1 1 0 01-1 1H6a1 1 0 01-1-1V7z" />
+                                    </svg>
+                                    <span className="text-orange-300 font-bold text-xl md:text-2xl">Horário de Atendimento</span>
+                                </div>
+                                <p className="text-blue-200 text-lg mb-2">Segunda a Sexta: <span className="font-semibold text-white">08:00 às 18:00</span></p>
+                                <p className="text-blue-200 text-lg mb-4">Sábado: <span className="font-semibold text-white">08:00 às 12:00</span></p>
+                                <div className="flex items-center gap-3 mt-4">
+                                    <svg className="w-7 h-7 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/>
+                                    </svg>
+                                    <span className="text-cyan-300 font-bold text-lg">Atendimento humano e ágil</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-10">
+                            <a
+                                href="mailto:mixfibra@provedor.com"
+                                className="flex items-center gap-3 bg-gradient-to-r from-orange-400 via-yellow-300 to-cyan-400 px-6 py-3 rounded-full shadow-lg text-blue-900 font-extrabold text-lg hover:scale-105 transition-transform duration-200"
+                            >
+                                <svg className="w-6 h-6 text-blue-900" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.94 6.94a1.5 1.5 0 012.12 0L10 11.88l4.94-4.94a1.5 1.5 0 112.12 2.12l-6 6a1.5 1.5 0 01-2.12 0l-6-6a1.5 1.5 0 010-2.12z" />
+                                </svg>
+                                mixfibra@provedor.com
+                            </a>
+                        </div>
+                    </section>
+
+                    {/* Seção de Suporte Rápido (LLM) */}
+                    <section id="support-section" ref={supportRef} className={`w-full py-16 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-12 rounded-3xl max-w-6xl mx-auto mb-12 transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg flex items-center justify-center gap-3">
+                            <svg className="w-9 h-9 text-orange-400 animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12H9v2h2V6zm0 4H9v4h2v-4z"/></svg>
+                            Suporte Rápido <span className="text-orange-400">Mix Fibra</span>
+                        </h2>
+                        <p className="text-blue-200 mb-8 text-lg md:text-xl font-medium max-w-2xl mx-auto">
+                            Descreva seu problema com a internet e nosso assistente virtual vai sugerir os primeiros passos para você resolver!
+                        </p>
+                        <div className="bg-blue-800/80 glass rounded-2xl p-8 shadow-xl max-w-2xl mx-auto">
+                            <QuickSupport />
+                        </div>
+                        <div className="flex justify-center mt-8">
+                            <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer"
+                                className="flex items-center gap-3 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:from-green-500 hover:to-green-400 text-white font-extrabold py-3 px-8 rounded-full text-xl shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400 focus:ring-opacity-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" />
+                                </svg>
+                                Falar com Suporte no WhatsApp
+                            </a>
+                        </div>
+                    </section>
+
+                    {/* Seção de FAQ */}
+                    <section className={`w-full py-16 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-12 rounded-3xl max-w-6xl mx-auto mb-12 transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-10 drop-shadow-lg flex items-center justify-center gap-3">
+                            <svg className="w-8 h-8 text-orange-400 animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12H9v2h2V6zm0 4H9v4h2v-4z"/></svg>
+                            Perguntas Frequentes <span className="text-orange-400">(FAQ)</span>
+                        </h2>
+                        <div className="max-w-3xl mx-auto">
+                            {/* FAQ Estático */}
+                            {[
+                                { question: 'Como faço para verificar a disponibilidade na minha cidade?', answer: <>Você pode entrar em contato conosco pelo <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="text-green-400 underline hover:text-green-300 transition">WhatsApp</a> ou preencher o formulário de contato em nossa seção "Fale Conosco". Nossa equipe verificará a cobertura em seu endereço.</> },
+                                { question: 'Quais são as formas de pagamento aceitas?', answer: <>Aceitamos pagamentos via boleto bancário, débito automático e cartão de crédito. Consulte nossos atendentes para mais detalhes pelo <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="text-green-400 underline hover:text-green-300 transition">WhatsApp</a>.</> },
+                                { question: 'Posso mudar de plano a qualquer momento?', answer: <>Sim, você pode solicitar a alteração do seu plano a qualquer momento, de acordo com as condições contratuais. Entre em contato com nossa central de atendimento pelo <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="text-green-400 underline hover:text-green-300 transition">WhatsApp</a> para verificar as opções.</> },
+                                { question: 'A instalação da fibra óptica tem custo?', answer: <>A instalação padrão é gratuita em muitos de nossos planos. No entanto, condições específicas podem se aplicar. Recomendamos verificar com nossa equipe de vendas pelo <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="text-green-400 underline hover:text-green-300 transition">WhatsApp</a>.</> },
+                            ].map((item, index) => (
+                                <FaqItem key={index} question={item.question} answer={item.answer} faqId={index + 1} />
+                            ))}
+
+                            {/* Pergunte à Mix Fibra (LLM) */}
+                            <FaqAsker />
+                        </div>
+                        <div className="flex justify-center mt-10">
+                            <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer"
+                                className="flex items-center gap-3 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:from-green-500 hover:to-green-400 text-white font-extrabold py-3 px-8 rounded-full text-xl shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400 focus:ring-opacity-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" />
+                                </svg>
+                                Atendimento WhatsApp
+                            </a>
+                        </div>
+                    </section>
+
+                    {/* Rodapé */}
+                    <footer className="w-full bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 rounded-t-2xl shadow-2xl p-8 text-center text-blue-200 text-base mt-8">
+                        <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto gap-4">
+                            <div className="flex items-center gap-3 justify-center">
+                                <img src="imagens/logo-mix-fibra.png" alt="Logo Mix Fibra" className="w-12 h-12 rounded-lg shadow-md" />
+                                <span className="text-2xl font-black tracking-tight text-white">MIX <span className="text-orange-400">FIBRA</span></span>
+                            </div>
+                            <div className="flex flex-col md:flex-row items-center gap-4">
+                                <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-green-400 hover:text-green-300 font-bold transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" />
+                                    </svg>
+                                    WhatsApp
+                                </a>
+                                <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-orange-400 transition-colors duration-300">Termos de Uso</a>
+                                <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-orange-400 transition-colors duration-300">Política de Privacidade</a>
+                            </div>
+                        </div>
+                        <p className="mt-6 text-blue-300">© 2025 Mix Fibra. Todos os direitos reservados.</p>
+                        <p className="mt-1 text-blue-400">Conectando você ao futuro com ultra velocidade.</p>
+                    </footer>
+                </div>
+            );
+        }
+
+        // Componente para o Recomendador de Planos
+        function PlanRecommender() {
+            const [usageInput, setUsageInput] = React.useState('');
+            const [recommendationOutput, setRecommendationOutput] = React.useState('');
+            const [llmLoading, setLlmLoading] = React.useState(false);
+
+            const handleRecommendation = async () => {
+                if (!usageInput.trim()) {
+                    setRecommendationOutput('<p class="text-red-400">Por favor, descreva seu uso da internet para obter uma recomendação.</p>');
+                    return;
+                }
+
+                setLlmLoading(true);
+                setRecommendationOutput(''); // Limpa a saída anterior
+
+                try {
+                    const prompt = `A Mix Fibra oferece os seguintes planos de internet:
+                    - 50 megas por R$ 39,00
+                    - 100 megas + TV com 285 canais por R$ 49,99
+                    - 200 megas + TV com 285 canais por R$ 59,99
+                    - 300 megas + TV com 288 canais por R$ 69,99
+
+                    Com base na seguinte descrição de uso da internet: "${usageInput}", qual plano da Mix Fibra você recomendaria e por quê? Retorne a resposta em formato JSON com as seguintes propriedades: "recommendedPlan" (nome do plano), "megas" (somente o número), "price" (somente o número), "channels" (número de canais, se aplicável, ou 0 se não tiver TV), e "justification" (uma breve justificativa).`;
+
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                    const payload = {
+                        contents: chatHistory,
+                        generationConfig: {
+                            responseMimeType: "application/json",
+                            responseSchema: {
+                                type: "OBJECT",
+                                properties: {
+                                    "recommendedPlan": { "type": "STRING" },
+                                    "megas": { "type": "NUMBER" },
+                                    "price": { "type": "NUMBER" },
+                                    "channels": { "type": "NUMBER" },
+                                    "justification": { "type": "STRING" }
+                                },
+                                "propertyOrdering": ["recommendedPlan", "megas", "price", "channels", "justification"]
+                            }
+                        }
+                    };
+                    const apiKey = ""; // Canvas will automatically provide the API key at runtime
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const jsonText = result.candidates[0].content.parts[0].text;
+                        const parsedJson = JSON.parse(jsonText);
+
+                        // Display the structured recommendation
+                        setRecommendationOutput(`
+                            <div class="flex flex-col items-center justify-center">
+                                <h3 class="text-2xl md:text-3xl font-bold text-orange-400 mb-2">${parsedJson.recommendedPlan}</h3>
+                                <div class="flex flex-wrap gap-4 justify-center mb-2">
+                                    <span class="bg-blue-900/80 px-4 py-2 rounded-full text-cyan-300 font-bold text-lg shadow-md">Velocidade: ${parsedJson.megas} megas</span>
+                                    <span class="bg-blue-900/80 px-4 py-2 rounded-full text-orange-300 font-bold text-lg shadow-md">Preço: R$ ${parsedJson.price.toFixed(2).replace('.', ',')}</span>
+                                    ${parsedJson.channels > 0 ? `<span class="bg-blue-900/80 px-4 py-2 rounded-full text-yellow-300 font-bold text-lg shadow-md">Canais de TV: ${parsedJson.channels}</span>` : ''}
+                                </div>
+                                <p class="mt-3 text-blue-100 text-lg">${parsedJson.justification}</p>
+                                <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer"
+                                    class="mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:from-green-500 hover:to-green-400 text-white font-extrabold py-3 px-8 rounded-full text-xl shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400 focus:ring-opacity-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" />
+                                    </svg>
+                                    Assinar pelo WhatsApp
+                                </a>
+                            </div>
+                        `);
+                    } else {
+                        setRecommendationOutput('<p class="text-red-400">Não foi possível obter uma recomendação. Tente novamente.</p>');
+                    }
+                } catch (error) {
+                    console.error('Erro ao chamar a API Gemini:', error);
+                    setRecommendationOutput('<p class="text-red-400">Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.</p>');
+                } finally {
+                    setLlmLoading(false);
+                }
+            };
+
+            return (
+                <div className="bg-blue-800/80 glass rounded-2xl p-8 shadow-xl mt-10 max-w-2xl mx-auto">
+                    <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4 flex items-center gap-2">
+                        <svg className="w-7 h-7 text-orange-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12H9v2h2V6zm0 4H9v4h2v-4z"/></svg>
+                        Descubra o melhor plano para você
+                    </h3>
+                    <textarea
+                        id="usage-input"
+                        className="w-full p-4 rounded-lg bg-blue-900 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-orange-500 mb-4 h-32 resize-y"
+                        placeholder="Ex: 'Somos 4 pessoas em casa, gostamos de assistir filmes em 4K, jogar online e fazer videochamadas de trabalho.'"
+                        value={usageInput}
+                        onChange={(e) => setUsageInput(e.target.value)}
+                    ></textarea>
+                    
+                    <button
+                        id="recommend-button"
+                        onClick={handleRecommendation}
+                        className="bg-orange-500 hover:bg-orange-600 text-white font-extrabold py-3 px-8 rounded-full text-xl md:text-2xl shadow-lg transform transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
+                    >
+                        Obter Recomendação ✨
+                    </button>
+
+                    {llmLoading && (
+                        <div id="llm-loading-indicator" className="flex items-center justify-center mt-6">
+                            <div className="spinner"></div>
+                            <p className="ml-4 text-lg text-blue-200">Buscando a melhor recomendação...</p>
+                        </div>
+                    )}
+
+                    <div id="recommendation-output" className={`mt-6 p-4 bg-blue-900 rounded-lg text-left text-blue-100 ${recommendationOutput ? '' : 'hidden'}`} dangerouslySetInnerHTML={{ __html: recommendationOutput }}>
+                    </div>
+                </div>
+            );
+        }
+
+        // Componente para o Suporte Rápido
+        function QuickSupport() {
+            const [troubleshootInput, setTroubleshootInput] = React.useState('');
+            const [troubleshootOutput, setTroubleshootOutput] = React.useState('');
+            const [llmLoading, setLlmLoading] = React.useState(false);
+
+            const handleTroubleshoot = async () => {
+                if (!troubleshootInput.trim()) {
+                    setTroubleshootOutput('<p class="text-red-400">Por favor, descreva seu problema para obter ajuda.</p>');
+                    return;
+                }
+
+                setLlmLoading(true);
+                setTroubleshootOutput('');
+
+                try {
+                    const prompt = `Você é um assistente de suporte técnico da Mix Fibra, um provedor de internet e TV. Nossos planos incluem:
+                    - 50 megas por R$ 39,99
+                    - 100 megas + TV com 285 canais por R$ 49,99
+                    - 200 megas + TV com 285 canais por R$ 59,99
+                    - 300 megas + TV com 288 canais por R$ 69,99
+                    Atendemos nas cidades de Sumé, Congo, Camalaú e Caraúbas. Nosso telefone de contato é (83) 99641-1187.
+
+                    O usuário está descrevendo um problema com a internet: "${troubleshootInput}".
+                    Forneça 2-3 passos de solução de problemas que o usuário pode tentar em casa. Se o problema persistir, oriente o usuário a entrar em contato com o suporte técnico da Mix Fibra pelo telefone fornecido. Seja conciso e direto.`;
+
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                    const payload = { contents: chatHistory };
+                    const apiKey = "";
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        setTroubleshootOutput(`<div class="space-y-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <svg class="w-7 h-7 text-orange-400 animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12H9v2h2V6zm0 4H9v4h2v-4z"/></svg>
+                                <span class="text-xl font-bold text-orange-300">Sugestão de Suporte</span>
+                            </div>
+                            <div class="text-blue-100 text-lg leading-relaxed">${text}</div>
+                            <div class="flex flex-col md:flex-row items-center gap-4 mt-4">
+                                <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer"
+                                    class="flex items-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:from-green-500 hover:to-green-400 text-white font-extrabold py-3 px-8 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400 focus:ring-opacity-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" />
+                                    </svg>
+                                    Falar com Suporte no WhatsApp
+                                </a>
+                                <a href="tel:+5583996411187"
+                                    class="flex items-center gap-2 bg-gradient-to-r from-orange-400 via-yellow-300 to-orange-500 hover:from-orange-500 hover:to-orange-400 text-blue-900 font-extrabold py-3 px-8 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.103 6.103l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                    </svg>
+                                    (83) 99641-1187
+                                </a>
+                            </div>
+                        </div>`);
+                    } else {
+                        setTroubleshootOutput('<p class="text-red-400">Não foi possível obter ajuda. Tente novamente.</p>');
+                    }
+                } catch (error) {
+                    console.error('Erro ao chamar a API Gemini para Suporte Rápido:', error);
+                    setTroubleshootOutput('<p class="text-red-400">Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.</p>');
+                } finally {
+                    setLlmLoading(false);
+                }
+            };
+
+            return (
+                <div className="flex flex-col items-center">
+                    <div className="w-full flex flex-col items-center mb-4">
+                        <div className="relative w-full">
+                            <textarea
+                                id="troubleshoot-input"
+                                className="w-full p-4 rounded-xl bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-orange-500 mb-2 h-32 resize-y shadow-lg border border-blue-700"
+                                placeholder="Ex: 'Minha internet está muito lenta hoje', 'Não consigo conectar no Wi-Fi', 'A TV travou.'"
+                                value={troubleshootInput}
+                                onChange={(e) => setTroubleshootInput(e.target.value)}
+                                style={{ minHeight: 80 }}
+                            ></textarea>
+                            <div className="absolute top-2 right-3 pointer-events-none">
+                                <svg className="w-7 h-7 text-orange-400 opacity-70" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12H9v2h2V6zm0 4H9v4h2v-4z"/></svg>
+                            </div>
+                        </div>
+                        <button
+                            id="troubleshoot-button"
+                            onClick={handleTroubleshoot}
+                            className="mt-2 bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 hover:from-orange-600 hover:to-yellow-500 text-white font-extrabold py-3 px-8 rounded-full text-xl shadow-xl transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
+                        >
+                            Obter Ajuda ✨
+                        </button>
+                    </div>
+
+                    {llmLoading && (
+                        <div id="troubleshoot-loading-indicator" className="flex items-center justify-center mt-6">
+                            <div className="spinner"></div>
+                            <p className="ml-4 text-lg text-blue-200">Buscando solução...</p>
+                        </div>
+                    )}
+
+                    <div
+                        id="troubleshoot-output"
+                        className={`mt-6 w-full p-6 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 rounded-2xl text-left text-blue-100 shadow-xl border border-blue-700 ${troubleshootOutput ? '' : 'hidden'}`}
+                        dangerouslySetInnerHTML={{ __html: troubleshootOutput }}
+                    ></div>
+                </div>
+            );
+        }
+
+        // Componente para um item de FAQ (Acordeão)
+        function FaqItem({ question, answer, faqId }) {
+            const [isOpen, setIsOpen] = React.useState(false);
+
+            const toggleOpen = () => {
+                setIsOpen(!isOpen);
+            };
+
+            return (
+                <div className="faq-item">
+                    <div className="faq-question" onClick={toggleOpen}>
+                        {question}
+                        <svg className={`faq-arrow w-6 h-6 ${isOpen ? 'rotate' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div className={`faq-answer ${isOpen ? 'open' : ''}`} id={`faq-answer-${faqId}`}>
+                        <p>{answer}</p>
+                    </div>
+                </div>
+            );
+        }
+
+        // Componente para o Pergunte à Mix Fibra (LLM)
+        function FaqAsker() {
+            const [faqLlmInput, setFaqLlmInput] = React.useState('');
+            const [faqLlmOutput, setFaqLlmOutput] = React.useState('');
+            const [llmLoading, setLlmLoading] = React.useState(false);
+
+            const handleAskFaq = async () => {
+                if (!faqLlmInput.trim()) {
+                    setFaqLlmOutput('<p class="text-red-400">Por favor, digite sua pergunta.</p>');
+                    return;
+                }
+
+                setLlmLoading(true);
+                setFaqLlmOutput(''); // Limpa a saída anterior
+
+                try {
+                    const prompt = `Você é um assistente de suporte da Mix Fibra, um provedor de internet e TV. Nossos planos incluem:
+                    - 50 megas por R$ 39,99
+                    - 100 megas + TV com 285 canais por R$ 49,99
+                    - 200 megas + TV com 285 canais por R$ 59,99
+                    - 300 megas + TV com 288 canais por R$ 69,99
+                    Atendemos nas cidades de Sumé, Congo, Camalaú e Caraúbas. Nosso telefone de contato é (89) 99641-1187.
+
+                    Por favor, responda à seguinte pergunta do usuário de forma útil e concisa, como se fosse um representante da Mix Fibra:
+                    '${faqLlmInput}'`;
+
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                    const payload = { contents: chatHistory };
+                    const apiKey = ""; // Canvas will automatically provide the API key at runtime
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        setFaqLlmOutput(`<p>${text}</p>`);
+                    } else {
+                        setFaqLlmOutput('<p class="text-red-400">Não foi possível obter uma resposta. Tente novamente.</p>');
+                    }
+                } catch (error) {
+                    console.error('Erro ao chamar a API Gemini para FAQ:', error);
+                    setFaqLlmOutput('<p class="text-red-400">Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.</p>');
+                } finally {
+                    setLlmLoading(false);
+                }
+            };
+
+            return (
+                <div className="mt-12 p-6 bg-blue-800 rounded-lg shadow-xl">
+                    <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4">Pergunte à Mix Fibra ✨</h3>
+                    <p className="text-blue-200 mb-4">Tem uma pergunta que não encontrou aqui? Digite abaixo e nosso assistente responderá!</p>
+                    <textarea
+                        id="faq-llm-input"
+                        className="w-full p-4 rounded-lg bg-blue-700 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-orange-500 mb-4 h-28 resize-y"
+                        placeholder="Ex: 'Preciso de internet para jogos online, qual plano é melhor?'"
+                        value={faqLlmInput}
+                        onChange={(e) => setFaqLlmInput(e.target.value)}
+                    ></textarea>
+                    <button
+                        id="ask-faq-button"
+                        onClick={handleAskFaq}
+                        className="bg-orange-500 hover:bg-orange-600 text-white font-extrabold py-3 px-8 rounded-full text-xl md:text-2xl shadow-lg transform transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
+                    >
+                        Perguntar ✨
+                    </button>
+
+                    {llmLoading && (
+                        <div id="faq-llm-loading-indicator" className="flex items-center justify-center mt-6">
+                            <div className="spinner"></div>
+                            <p className="ml-4 text-lg text-blue-200">Buscando a resposta...</p>
+                        </div>
+                    )}
+
+                    <div id="faq-llm-output" className={`mt-6 p-4 bg-blue-700 rounded-lg text-left text-blue-100 ${faqLlmOutput ? '' : 'hidden'}`} dangerouslySetInnerHTML={{ __html: faqLlmOutput }}>
+                    </div>
+                </div>
+            );
+        }
+
+        // Renderiza o componente principal App no elemento com id 'root'
+        // Agora a renderização é feita diretamente no escopo do script type="text/babel"
+        // e será executada após as definições dos componentes.
+        // Renderização moderna do React 18
+        const rootElement = document.getElementById('root');
+        if (rootElement) {
+            ReactDOM.createRoot(rootElement).render(<App />);
+        }
+    </script>
+</body>
+</html>

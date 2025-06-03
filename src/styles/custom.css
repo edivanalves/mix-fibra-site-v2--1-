@@ -1,0 +1,109 @@
+/* styles/custom.css */
+
+.card-3d {
+    background: linear-gradient(145deg, #0d0d3a, #1a1a4d);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,255,255,0.2), inset 0 0 30px rgba(0,255,255,0.1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-3d:hover {
+    transform: perspective(1000px) rotateY(5deg) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,255,255,0.4);
+}
+
+.card-3d::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(0,255,255,0.15), transparent);
+    animation: pulseGlow 5s infinite linear;
+}
+
+@keyframes pulseGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.nebula-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: floatParticles 40s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes floatParticles {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+/* Fundo estilo "nebula" com partículas */
+.nebula-bg {
+    background: radial-gradient(circle at 20% 80%, rgba(0, 128, 255, 0.2), transparent),
+                radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.15), transparent),
+                linear-gradient(135deg, #0a0a2a, #000015);
+    background-size: 200% 200%;
+    animation: moveBackground 30s ease infinite alternate;
+    position: relative;
+    z-index: 0;
+}
+
+.nebula-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    animation: floatParticles 80s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+@keyframes floatParticles {
+    0% { background-position: 0 0; }
+    100% { background-position: 200px 200px; }
+}
+
+/* Card 3D */
+.card-3d {
+    background: linear-gradient(145deg, #0d0d3a, #1a1a4d);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1), inset 0 0 25px rgba(0,255,255,0.05);
+    transform-style: preserve-3d;
+    transition: transform 0.5s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.card-3d:hover {
+    transform: perspective(1000px) rotateY(4deg) scale(1.03);
+    box-shadow: 0 20px 50px rgba(0, 255, 255, 0.3);
+}
+.card-3d::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,255,255,0.08), transparent);
+    animation: pulseGlow 5s linear infinite;
+}
+
+@keyframes pulseGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
