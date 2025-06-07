@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mix-fibra-site-v2/static/css/main.3f819365.css",
+    "main.js": "/mix-fibra-site-v2/static/js/main.0b6b40d7.js",
+    "index.html": "/mix-fibra-site-v2/index.html",
+    "main.3f819365.css.map": "/mix-fibra-site-v2/static/css/main.3f819365.css.map",
+    "main.0b6b40d7.js.map": "/mix-fibra-site-v2/static/js/main.0b6b40d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f819365.css",
+    "static/js/main.0b6b40d7.js"
+  ]
+}
