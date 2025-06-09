@@ -512,9 +512,49 @@
 </head>
 <!-- ...existing code... -->
 <body class="bg-blue-950 text-white flex flex-col items-center min-h-screen min-w-screen w-full h-full overflow-x-hidden nebula-bg">
-    <div id="root" class="w-full h-full min-h-screen min-w-screen"></div>
-    <div id="root"></div>
-<!-- ...existing code... -->
+    <!-- 1. Ajuste o container principal para limitar a largura máxima e centralizar -->
+<div id="root" class="w-full min-h-screen flex justify-center">
+  <div class="w-full max-w-[1800px] mx-auto">
+    <!-- O React vai renderizar aqui -->
+  </div>
+</div>
+
+<!-- 2. Garanta que as seções usem padding horizontal responsivo -->
+<section className="px-2 sm:px-4 md:px-8 lg:px-16 xl:px-32 ...">
+  <!-- ... -->
+</section>
+
+<!-- 3. Ajuste grids para responsividade -->
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 ...">
+  <!-- ... -->
+</div>
+
+<!-- 4. Imagens e vídeos sempre com width 100% e altura automática -->
+<img className="w-full h-auto max-w-full rounded-xl ..." ... />
+<iframe className="w-full h-56 md:h-72 lg:h-96 rounded-xl ..." ...></iframe>
+
+<!-- 5. Ajuste botões e textos para tamanhos menores -->
+<button className="text-base sm:text-lg md:text-xl px-4 sm:px-6 md:px-8 py-2 sm:py-3 ...">
+  <!-- ... -->
+</button>
+
+<!-- 6. Para textos grandes, use clamp para responsividade -->
+<h1 className="text-[clamp(2rem,6vw,3.5rem)] ...">
+  <!-- ... -->
+</h1>
+
+<!-- 7. Ajuste cards para empilharem em telas pequenas -->
+<div className="flex flex-col md:flex-row gap-6 ...">
+  <!-- ... -->
+</div>
+
+<!-- 8. Use overflow-x-auto em grids grandes para evitar cortes em telas pequenas -->
+<div className="overflow-x-auto">
+  <div className="grid ...">
+    <!-- ... -->
+  </div>
+</div>
+
 <div class="nebula-bg fixed inset-0 w-full h-full -z-10"></div>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -525,6 +565,7 @@
         function App() {
             // Estado para o indicador de carregamento inicial
             const [loading, setLoading] = React.useState(true);
+            const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
             // Referências para scroll suave da navegação
             const homeRef = React.useRef(null);
@@ -552,12 +593,14 @@
                     {/* Barra de Navegação Moderna */}
                     <nav className="w-full bg-blue-800/80 backdrop-blur-md shadow-xl fixed top-0 left-0 right-0 z-50 transition-all duration-300">
                         <div className="max-w-6xl mx-auto flex justify-between items-center py-2 px-2 md:px-0">
+                            {/* Logo */}
                             <a href="#home" onClick={() => scrollToSection(homeRef)} className="flex items-center space-x-2 group">
                                 <img src="imagens/logo-mix-fibra.png" alt="Logo Mix Fibra" className="w-10 h-10 rounded-lg shadow-md group-hover:scale-110 transition-transform duration-200" />
                                 <span className="text-2xl md:text-3xl font-black tracking-tight text-white group-hover:text-orange-400 transition-colors duration-200">
                                     MIX <span className="text-orange-400">FIBRA</span>
                                 </span>
                             </a>
+                            {/* Menu Desktop */}
                             <div className="hidden md:flex space-x-2 md:space-x-6">
                                 <a href="#home" onClick={() => scrollToSection(homeRef)} className="nav-link">Início</a>
                                 <a href="#plans-section" onClick={() => scrollToSection(plansRef)} className="nav-link">Planos</a>
@@ -565,37 +608,54 @@
                                 <a href="#support-section" onClick={() => scrollToSection(supportRef)} className="nav-link">Suporte</a>
                                 <a href="#about" onClick={() => scrollToSection(aboutRef)} className="nav-link">Sobre Nós</a>
                                 <a href="#contact" onClick={() => scrollToSection(contactRef)} className="nav-link">Contato</a>
-                                {/* Nova aba Central do Assinante */}
                                 <a
-  href="https://mixfibra.sgp.net.br/central/home/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="nav-link bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold px-4 py-2 rounded-full shadow-md hover:from-cyan-700 hover:to-blue-700 transition-all duration-200"
->
-  Central do Assinante
-</a>
+                                  href="https://mixfibra.sgp.net.br/central/home/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="nav-link bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold px-4 py-2 rounded-full shadow-md hover:from-cyan-700 hover:to-blue-700 transition-all duration-200"
+                                >
+                                  Central do Assinante
+                                </a>
                             </div>
-                            {/* Botão de WhatsApp fixo para mobile */}
-                            <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="ml-2 md:ml-0 flex items-center bg-green-500 hover:bg-green-600 text-white font-bold px-3 py-2 rounded-full shadow-lg transition-all duration-200 text-sm md:text-base">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" /></svg>
-                                WhatsApp
+                            {/* Botão WhatsApp Desktop */}
+                            <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center bg-green-500 hover:bg-green-600 text-white font-bold px-3 py-2 rounded-full shadow-lg transition-all duration-200 text-sm md:text-base">
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" /></svg>
+                              WhatsApp
                             </a>
+                            {/* Botão Hamburguer Mobile */}
+                            <button
+                              className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full bg-blue-900/60 hover:bg-blue-900/80 transition"
+                              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                              aria-label="Abrir menu"
+                            >
+                              <span className={`block w-6 h-0.5 bg-white mb-1 transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                              <span className={`block w-6 h-0.5 bg-white mb-1 transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></span>
+                              <span className={`block w-6 h-0.5 bg-white transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+                            </button>
                         </div>
-                        {/* Navegação mobile */}
-                        <div className="md:hidden flex justify-center mt-2 space-x-2">
-                            <a href="#home" onClick={() => scrollToSection(homeRef)} className="nav-link-mobile">Início</a>
-                            <a href="#plans-section" onClick={() => scrollToSection(plansRef)} className="nav-link-mobile">Planos</a>
-                            <a href="#video-section" onClick={() => scrollToSection(videoRef)} className="nav-link-mobile">Vídeos</a>
-                            <a href="#support-section" onClick={() => scrollToSection(supportRef)} className="nav-link-mobile">Suporte</a>
+                        {/* Menu Mobile */}
+                        {mobileMenuOpen && (
+                          <div className="md:hidden bg-blue-900/95 backdrop-blur-xl shadow-2xl rounded-b-2xl px-6 py-4 flex flex-col gap-3 animate-fade-in-down">
+                            <a href="#home" onClick={() => { setMobileMenuOpen(false); scrollToSection(homeRef); }} className="nav-link-mobile">Início</a>
+                            <a href="#plans-section" onClick={() => { setMobileMenuOpen(false); scrollToSection(plansRef); }} className="nav-link-mobile">Planos</a>
+                            <a href="#video-section" onClick={() => { setMobileMenuOpen(false); scrollToSection(videoRef); }} className="nav-link-mobile">Vídeos</a>
+                            <a href="#support-section" onClick={() => { setMobileMenuOpen(false); scrollToSection(supportRef); }} className="nav-link-mobile">Suporte</a>
+                            <a href="#about" onClick={() => { setMobileMenuOpen(false); scrollToSection(aboutRef); }} className="nav-link-mobile">Sobre Nós</a>
+                            <a href="#contact" onClick={() => { setMobileMenuOpen(false); scrollToSection(contactRef); }} className="nav-link-mobile">Contato</a>
                             <a
-  href="https://mixfibra.sgp.net.br/central/home/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="nav-link-mobile font-bold text-cyan-300"
->
-  Central do Assinante
-</a>
-                        </div>
+                              href="https://mixfibra.sgp.net.br/central/home/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="nav-link-mobile font-bold text-cyan-300"
+                            >
+                              Central do Assinante
+                            </a>
+                            <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer" className="flex items-center bg-green-500 hover:bg-green-600 text-white font-bold px-3 py-2 rounded-full shadow-lg transition-all duration-200 text-base mt-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" /></svg>
+                              WhatsApp
+                            </a>
+                          </div>
+                        )}
                     </nav>
 
                     {/* Seção Hero Moderna */}
@@ -687,7 +747,7 @@
                     <section id="plans-section" ref={plansRef} className={`w-full py-16 px-4 bg-blue-900 text-center shadow-inner mt-8 rounded-2xl max-w-6xl mx-auto transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-12">Nossos Planos de Internet</h2>
                         
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 px-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-12 px-4">
 {[
     { 
       megas: 50, 
@@ -866,7 +926,7 @@
                                 <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full blur-2xl opacity-30 bg-yellow-300 pointer-events-none"></div>
                                 <div className="mb-5 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-tr from-yellow-300 via-orange-400 to-orange-600 shadow-lg border-4 border-yellow-200 animate-pulse">
                                     <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2 0v10h12V5H4zm6 8a1 1 0 100-2 1 1 0 000 2z"/>
+                                        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/>
                                     </svg>
                                 </div>
                                 <h3 className="text-2xl font-bold text-white mb-2 drop-shadow">Entretenimento Completo</h3>
@@ -1432,7 +1492,7 @@
                             <div class="flex flex-col md:flex-row items-center gap-4 mt-4">
                                 <a href="https://wa.me/5589996411187" target="_blank" rel="noopener noreferrer"
                                     class="flex items-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:from-green-500 hover:to-green-400 text-white font-extrabold py-3 px-8 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-400 focus:ring-opacity-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M16.72 11.06a6.5 6.5 0 10-5.66 5.66l2.12.7a1 1 0 001.18-1.18l-.7-2.12a6.5 6.5 0 003.06-3.06z" />
                                     </svg>
                                     Falar com Suporte no WhatsApp
