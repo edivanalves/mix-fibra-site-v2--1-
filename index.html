@@ -833,7 +833,7 @@
       }`}>
         <svg className="w-7 h-7 text-white drop-shadow-lg" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
           <path d="M12 20v-6m0 0c-2.5 0-4.5-2-4.5-4.5S9.5 5 12 5s4.5 2 4.5 4.5S14.5 14 12 14z" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+      </svg>
       </div>
       {/* Megas */}
       <div className={`text-3xl font-black mb-1 tracking-tight ${plan.highlight ? 'text-orange-400 drop-shadow-[0_2px_8px_rgba(255,165,0,0.6)]' : 'text-cyan-300 drop-shadow-[0_2px_8px_rgba(34,211,238,0.5)]'}`}>
@@ -960,7 +960,6 @@
                                 <img src="https://placehold.co/1200x400/000033/FFFFFF?text=Instalação+Fibra+Óptica" alt="Instalação de Fibra" className="rounded-xl shadow-lg w-full h-56 object-cover mb-4 border-4 border-yellow-300/30 group-hover:border-yellow-300 transition-all duration-300" />
                                 <p className="text-blue-200 text-lg font-semibold">Cuidamos da sua instalação com fibra óptica.</p>
                             </div>
-                            
                         </div>
                     </section>
 
@@ -1261,6 +1260,39 @@
                         </div>
                     </section>
 
+                    {/* Seção de Teste de Velocidade */}
+                    <section
+                        className="w-full py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-950 to-indigo-900 text-center shadow-2xl mt-12 rounded-3xl max-w-6xl mx-auto mb-12 transition-opacity duration-500"
+                    >
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-8 drop-shadow-lg">
+                            Teste sua <span className="text-orange-400">Velocidade</span>
+                        </h2>
+                        <p className="text-blue-200 mb-8 text-lg md:text-xl font-medium max-w-2xl mx-auto">
+                            Clique abaixo para medir a velocidade da sua internet agora mesmo!
+                        </p>
+                        <div className="flex flex-col items-center gap-6">
+                            {/* Botão para abrir o Speedtest em nova aba */}
+                            <a
+                                href="https://www.speedtest.net/pt/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-extrabold py-4 px-10 rounded-full text-2xl shadow-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyan-400 focus:ring-opacity-50"
+                            >
+                                Medir Velocidade da Internet
+                            </a>
+                            {/* OU, para incorporar o Speedtest diretamente na página (iframe) */}
+                            <div className="w-full flex justify-center mt-8">
+                                <img
+                                    src="imagens/speed.png"
+                                    alt="Speedtest"
+                                    width="350"
+                                    height="400"
+                                    className="rounded-2xl shadow-xl bg-blue-900 object-contain"
+                                />
+                            </div>
+                        </div>
+                    </section>
+
                     {/* Rodapé */}
                     <footer className="w-full bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 rounded-t-2xl shadow-2xl p-8 text-center text-blue-200 text-base mt-8">
                         <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto gap-4">
@@ -1362,7 +1394,7 @@
                     <button
                         id="recommend-button"
                         onClick={handleRecommendation}
-                        className="bg-orange-500 hover:bg-orange-600 text-white font-extrabold py-3 px-8 rounded-full text-xl md:text-2xl shadow-lg transform transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
+                        className="bg-orange-500 hover:bg-orange-600 text-white font-extrabold py-3 px-8 rounded-full text-2xl shadow-lg transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
                     >
                         Obter Recomendação ✨
                     </button>
@@ -1592,7 +1624,7 @@
                     <button
                         id="ask-faq-button"
                         onClick={handleAskFaq}
-                        className="bg-orange-500 hover:bg-orange-600 text-white font-extrabold py-3 px-8 rounded-full text-xl md:text-2xl shadow-lg transform transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
+                        className="bg-orange-500 hover:bg-orange-600 text-white font-extrabold py-3 px-8 rounded-full text-xl md:text-2xl shadow-lg transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
                     >
                         Perguntar ✨
                     </button>
