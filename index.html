@@ -181,9 +181,13 @@
             position: relative;
         }
         .nav-link:hover, .nav-link-mobile:hover {
-            background: linear-gradient(90deg, #ff9800 0%, #30cfff 100%);
-            color: #0a0a2a;
-            box-shadow: 0 2px 12px rgba(255,152,0,0.18);
+            color: #ff9800;
+            background: none;
+            box-shadow: none;
+            text-shadow: none;
+            transform: none;
+            border: none;
+            transition: color 0.18s;
         }
         .nav-link-mobile {
             font-size: 1.1rem;
@@ -368,6 +372,20 @@
             background: linear-gradient(90deg, #ffb300 0%, #ff9800 100%);
             box-shadow: 0 4px 24px rgba(255,152,0,0.18);
             transform: scale(1.04);
+        }
+        .btn:active::after {
+          content: '';
+          position: absolute;
+          left: 50%; top: 50%;
+          width: 0; height: 0;
+          background: rgba(255,255,255,0.25);
+          border-radius: 100%;
+          transform: translate(-50%, -50%);
+          animation: ripple 0.5s linear;
+          z-index: 1;
+        }
+        @keyframes ripple {
+          to { width: 200px; height: 200px; opacity: 0; }
         }
 
         /* Custom scrollbar for modern look */
@@ -1580,7 +1598,7 @@
                         <button
                             id="troubleshoot-button"
                             onClick={handleTroubleshoot}
-                            className="mt-2 bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 hover:from-orange-600 hover:to-yellow-500 text-white font-extrabold py-3 px-8 rounded-full text-xl shadow-xl transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
+                            className="mt-2 bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 hover:from-orange-600 hover:to-yellow-500 text-white font-extrabold py-3 px-8 rounded-full text-2xl shadow-lg transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50"
                         >
                             Obter Ajuda ✨
                         </button>
